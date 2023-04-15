@@ -12,22 +12,22 @@ Anotações referentes às práticas de programação do Devs4Fun
 
 ## Aplicações para desenvolvermos
 * Divisão de contas, PWA
-	Problemas a serem solucionados:
+	* Problemas a serem solucionados:
 		Dividir despesas, por exemplo, em um churrasco, almoço, festa, etc
 		Criação fácil de quadros de despesas, sem precisar que os usuários se cadastrem previamente
 
 * Aplicação de anotações
-	Aplicação inspiradora: 
+	* Aplicação inspiradora: 
 		Dontpad
-	Problemas a serem solucionados:
+	* Problemas a serem solucionados:
 		Segurança - Dontpad não permite colocar senha em um link
 		Formatação - Dontpad não usa fonte monospace
 		Conforto - Dontpad usa um tema de cores muito claro/brilhante (não tem dark mode)
 
 * Quadro Kanban simples
-	Aplicação inspiradora: 
+	* Aplicação inspiradora: 
 		Trello
-	Problemas a serem solucionados:
+	* Problemas a serem solucionados:
 		Criar facilmente um quadro sem precisar de cadastro, ou seja, com link fácil similar ao dontpad
 
 
