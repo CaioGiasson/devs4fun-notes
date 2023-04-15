@@ -5,10 +5,10 @@ Anotações referentes às práticas de programação do Devs4Fun
 * Levantamos algumas sugestões de projetos para serem temas de estudo/práticas
 * Metodologia de desenvolvimento das aplicações
 	Cada aplicação possui ao menos 4 etapas
-		* Arquitetura/Projeto - Definições de quais funcionalidades básicas a aplicação vai ter
-		* Backend - Rodando localmente. Vamos usar, de modo geral, a metodologia Backend first, exceto quando não é aplicável
-		* Frontend - Rodando localmente
-		* Deploy (CI/CD) - Publicar a aplicação e automatizar alguns processos
+	* Arquitetura/Projeto - Definições de quais funcionalidades básicas a aplicação vai ter
+	* Backend - Rodando localmente. Vamos usar, de modo geral, a metodologia Backend first, exceto quando não é aplicável
+	* Frontend - Rodando localmente
+	* Deploy (CI/CD) - Publicar a aplicação e automatizar alguns processos
 
 ## Aplicações para desenvolvermos
 * Divisão de contas, PWA
