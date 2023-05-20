@@ -23,25 +23,32 @@
 * cd sites-available
 * touch divisao-contas
 * vi divisao-contas
-	``` server {
-			server_name divisao-contas.devs4.fun;
+	```server {
+        listen 80;
+        server_name divisao-contas.devs4.fun;
 
-			gzip on;
-			gzip_proxied any;
-			gzip_types application/javascript application/x-javascript text/css text/javascript;
-			gzip_comp_level 5;
-			gzip_buffers 16 8k;
-			gzip_min_length 256;
+        gzip on;
+        gzip_proxied any;
+        gzip_types application/javascript application/x-javascript text/css text/javascript;
+        gzip_comp_level 5;
+        gzip_buffers 16 8k;
+        gzip_min_length 256;
 
-			location / {
-					proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-					proxy_set_header Host $host;
-					proxy_pass http://127.0.0.1:9999;
-					proxy_http_version 1.1;
-					proxy_set_header Upgrade $http_upgrade;
-					proxy_set_header Connection "upgrade";
-			}
-		}```
+        location /_next/static/ {
+                alias /var/www/divisao-contas/.next/static/;
+                expires 365d;
+                access_log off;
+        }
+
+        location / {
+                proxy_pass http://127.0.0.1:3000;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+}```
 * Alterar a pasta em que o nginx guarda as configurações
 	* vi /etc/nginx/nginx.conf
 	* Alterar `include /etc/nginx/sites-enabled/*;` para `include /etc/nginx/sites-available/*;`
