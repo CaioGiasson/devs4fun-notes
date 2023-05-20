@@ -1,22 +1,21 @@
 # Criar o projeto
-* Criar o repositório
-* Criar o projeto local
-* Conectar com o repositório
-* Alterar para Hello World
+[OK] Criar o repositório
+[OK] Criar o projeto local
+[OK] Conectar com o repositório
+[OK] Alterar para Hello World
 # Criar o servidor em nuvem. O que é Nuvem? O que é uma máquina virtual?
-* Acessar por SSH. O que é SSH?
-* apt update && apt upgrade
-* Instalar e habilitar Firewall. O que é Firewall? Analogia do Porteiro
-	* apt install nginx certbot python3-certbot-nginx
-	* ufw allow "Nginx Full"
-	* ufw allow OpenSSH
-	* ufw enable
-* Instalar o Node. O que é o Node? Por que vamos usar Node?
-	* apt install npm
-	* npm install -g pm2
-	* curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-	* source ~/.bashrc
-	* nvm install 18.16.0
+[OK] Acessar por SSH. O que é SSH?
+[OK] apt update && apt upgrade
+[OK] Instalar e habilitar Firewall. O que é Firewall? Analogia do Porteiro
+[OK] apt install nginx certbot python3-certbot-nginx
+[OK] ufw allow "Nginx Full"
+[OK] ufw allow OpenSSH
+[OK] ufw enable
+[OK] Instalar o Node. O que é o Node? Por que vamos usar Node?
+[OK] apt install npm
+[OK] curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+[OK] source ~/.bashrc
+[OK] npm install -g pm2
 # Criar o subdomínio e encaminhar para o servidor
 # Configurar o Firewall e registrar a aplicação
 * cd /etc/nginx
@@ -69,6 +68,9 @@
 * pm2 start npm --name divisao-contas -- start
 # Habilitar HTTPS
 * certbot --nginx -d divisao-contas.devs4.fun
+
+# ########################
+
 # Instalar o MySQL no servidor
 * apt install mysql-server
 * systemctl start mysql.service
