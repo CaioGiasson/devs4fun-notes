@@ -1,21 +1,21 @@
 # Criar o projeto
-[OK] Criar o repositório
-[OK] Criar o projeto local
-[OK] Conectar com o repositório
-[OK] Alterar para Hello World
+- [OK] Criar o repositório
+- [OK] Criar o projeto local
+- [OK] Conectar com o repositório
+- [OK] Alterar para Hello World
 # Criar o servidor em nuvem. O que é Nuvem? O que é uma máquina virtual?
-[OK] Acessar por SSH. O que é SSH?
-[OK] apt update && apt upgrade
-[OK] Instalar e habilitar Firewall. O que é Firewall? Analogia do Porteiro
-[OK] apt install nginx certbot python3-certbot-nginx
-[OK] ufw allow "Nginx Full"
-[OK] ufw allow OpenSSH
-[OK] ufw enable
-[OK] Instalar o Node. O que é o Node? Por que vamos usar Node?
-[OK] apt install npm
-[OK] curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-[OK] source ~/.bashrc
-[OK] npm install -g pm2
+- [OK] Acessar por SSH. O que é SSH?
+- [OK] apt update && apt upgrade
+- [OK] Instalar e habilitar Firewall. O que é Firewall? Analogia do Porteiro
+- [OK] apt install nginx certbot python3-certbot-nginx
+- [OK] ufw allow "Nginx Full"
+- [OK] ufw allow OpenSSH
+- [OK] ufw enable
+- [OK] Instalar o Node. O que é o Node? Por que vamos usar Node?
+- [OK] apt install npm
+- [OK] curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+- [OK] source ~/.bashrc
+- [OK] npm install -g pm2
 # Criar o subdomínio e encaminhar para o servidor
 # Configurar o Firewall e registrar a aplicação
 * cd /etc/nginx
